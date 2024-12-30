@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <style>
+        .container {
+            text-align: right;
+        }
+
+        h5 {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        p {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html">
+            <h5>Home</h5>
+        </a>
+        <a href="Images.html">
+            <h5>Images</h5>
+        </a>
+    </div>
+    <h2>Advanced Search</h2>
+    <h2>Find pages with...</h2>
+    <div class="form">
+        <form action="https://www.google.com/search" method="get">
+            <p>All these words:</p>
+            <input type="text" name="q" placeholder="Enter words"><br>
+
+            <p>This exact word or phrase:</p>
+            <input type="text" name="as_epq" placeholder="Exact phrase"><br>
+
+            <p>Any of these words:</p>
+            <input type="text" name="as_oq" placeholder="Any words"><br>
+
+            <p>None of these words:</p>
+            <input type="text" name="as_eq" placeholder="Words to exclude"><br>
+
+            <input type="submit" value="Advanced Search" style="background-color: rgb(104, 187, 243); color: aliceblue; border-color: rgb(104, 187, 243);">
+        </form>
+    </div>
+</body>
+
+</html>
