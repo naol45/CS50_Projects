@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Page
+{% endblock %}
+
+{% block body %}
+    <h1> Create a new page </h1>
+    <form placeholder="Search Encyclopedia:" action="{% url 'encyclopedia:new' %}" method="post" name="title">
+        {% csrf_token %}
+        {{ Tform }}<br>
+        <p>Please enter the content of your page in the text area below</p>
+        <textarea id="content" name="content" rows="4" cols="4" method="post" action="{% url 'encyclopedia:new' %}"></textarea><br><br>
+        <input type="submit">
+    </form>
+{% endblock %}
